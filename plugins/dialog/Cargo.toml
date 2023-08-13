@@ -22,7 +22,8 @@ tauri-plugin-fs = { path = "../fs", version = "2.0.0-alpha.0" }
 glib = "0.16"
 
 [target."cfg(any(target_os = \"macos\", windows, target_os = \"linux\", target_os = \"dragonfly\", target_os = \"freebsd\", target_os = \"openbsd\", target_os = \"netbsd\"))".dependencies]
-rfd = { version = "0.11", features = [ "gtk3", "common-controls-v6" ] }
+#rfd = { version = "0.11", features = [ "gtk3", "common-controls-v6" ] }
+rfd = { git = "https://github.com/orowith2os/rfd", branch = "portals-default", features = [ "gtk3", "common-controls-v6" ] }
 raw-window-handle = "0.5"
 
 [build-dependencies]
